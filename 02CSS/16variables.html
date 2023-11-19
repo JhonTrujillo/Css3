@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* variables */
+        :root{
+            --color-primario: rgb(246, 255, 127);
+            --color-secundario: blue;
+
+        }
+        /* BEM
+        B BLOCK .block
+        E ELEMENT .block__item
+        M MODIFIER .block-modifier  
+        */
+
+        /* block */
+        .box{
+            width: 200px;
+            background-color: var(--color-primario);
+            padding: 40px;
+            margin: 20px;
+        }
+
+        /* Elemento */
+        .box__btn{
+            width: 100px;
+            height: 40px;
+            background-color: blue;
+            border: none;
+            color: beige;
+        }
+
+        /* modificador del box*/
+        .box--bgred{
+            background: red;
+
+        }
+        /* modificador del btn */
+        .bnt--bgrec{
+            background: rgb(109, 2, 2);
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequatur harum corrupti nemo exercitationem, aperiam provident necessitatibus assumenda veniam quos fugiat impedit, aliquid doloremque aut, dolorum dolorem suscipit autem modi.</p>
+        <button class="box__btn">Click aqui</button>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequatur harum corrupti nemo exercitationem, aperiam provident necessitatibus assumenda veniam quos fugiat impedit, aliquid doloremque aut, dolorum dolorem suscipit autem modi.</p>
+        <button  class="box__btn">Click aqui</button>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequatur harum corrupti nemo exercitationem, aperiam provident necessitatibus assumenda veniam quos fugiat impedit, aliquid doloremque aut, dolorum dolorem suscipit autem modi.</p>
+        <button  class="box__btn">Click aqui</button>
+    </div>
+    <section class="box box--bgred">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequatur harum corrupti nemo exercitationem, aperiam provident necessitatibus assumenda veniam quos fugiat impedit, aliquid doloremque aut, dolorum dolorem suscipit autem modi.</p>
+        <button  class="box__btn bnt--bgrec">Click aqui</button>
+    </section>
+</body>
+</html>

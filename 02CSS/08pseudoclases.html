@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* enlace no visitado */
+        a:link{
+            color: green
+        }
+        /* enlace visitado */
+        a:visited{
+            color: red
+        }
+        /* input */
+        input:focus{
+            background-color: beige;
+            color: blue
+        }
+        /* pasar cursos por encima de los elementos */
+        a:hover{
+            font-size: 20px;
+        }
+
+        /* pseudoclase de negacion */
+        p:not(.miparrafo){
+            color:blue
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <a href="">Esto es un enlace</a>
+    <input type="text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque nulla expedita fuga, quia ad quod, rem ea nostrum ipsum eaque quos reiciendis laborum voluptate vitae voluptas molestias facere deleniti?</p>
+    <p class="miparrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident repellendus non dolorem consequuntur est. Dignissimos quis, cum officiis ex minima amet laboriosam cumque vel, quas at, alias fuga consectetur dolorem.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis facere molestias laboriosam ratione, quas dolorum est? Dignissimos quos repellat tenetur corrupti. Accusantium iure culpa reiciendis. Neque aspernatur veritatis consequuntur beatae!</p>
+</body>
+</html>

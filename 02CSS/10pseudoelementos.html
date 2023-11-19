@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* pseudoelemento se aplica con :: 
+        son elementos generados de forma dinamica*/
+        /* antes */
+        span::before{
+            content: '_';
+            font-size:30px ;
+        }
+        /* despues */
+        span::after{
+            content: 'Hola texto generado';
+            color:blue
+        }
+        /* editar texto letra capital*/
+        p::first-letter{
+            font-size: 45px;
+        }
+
+        /* primera linea de texto */
+        p::first-line{
+            color: red;
+        }
+
+        /* listas */
+        ul li::marker{
+            color: greenyellow;
+        }
+
+        /* placeholders */
+        input::placeholder{
+            color: red;
+            font-size: 18px;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <span></span> 
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem veritatis cumque neque esse aperiam impedit quibusdam eius dolor eligendi debitis sunt veniam corporis incidunt, voluptas, temporibus nisi commodi adipisci laboriosam?</p>
+
+   <ul>
+    <li>Elemento1</li>
+    <li>Elemento2</li>
+    <li>Elemento3</li>
+    <li>Elemento4</li>
+   </ul>
+
+   <input type="text" placeholder="Escribe tu nombre">
+</body>
+</html>

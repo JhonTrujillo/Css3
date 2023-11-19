@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* selector por atributo [] */
+        input[type="text"]{
+            background-color: red;
+        } 
+        a[href="https://www.google.com/?hl=es"]{
+            color: greenyellow;
+        }
+        /* que contengan una palabra */
+        a[href*="facebook"]{
+            color: rgb(226, 43, 165);
+
+        }
+        /* cuando comience por una palagra */
+        a[href^="http"]{
+            color: green;
+        }
+        /* que termine por una palabra */
+        a[href$=".pdf"]{
+            color: aquamarine;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="number">
+    <input type="text">
+    <input type="email">
+
+    <a href="https://www.google.com/?hl=es">google</a>
+    <a href="www.facebook.com/">facebook.com</a>
+    <a href="facebook.es">facebook.es</a>
+    <a href="documento.pdf">documento</a>
+
+    
+</body>
+</html>

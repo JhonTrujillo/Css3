@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* selector hermano general */
+        .articulo h1 ~ span{
+            color:blue
+        }
+
+        /* selector hermano adyacente */
+        .articulo h1 + span{
+            color: red
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- selectores hermanos -->
+    <div class="contenedor">
+        <div class="contenido">
+                <div class="articulo">
+                    <h1>HolaMundo</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat repudiandae accusantium veniam minus cupiditate consequuntur magni. Maxime magnam expedita tempore voluptatum commodi minus illo, corrupti qui, sunt eum alias ipsum.</p>
+                    <span>Hola mundo SPAN</span>
+                </div>
+                <div class="articulo">
+                    <h1>Hola MUNDO 2</h1>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum iusto suscipit doloremque molestiae adipisci aperiam, laborum est ab non! Voluptatibus nesciunt delectus officia. Ratione, ducimus inventore! Dicta possimus dignissimos voluptatem.</span>
+                    <span><a href="">Hola esto es un texto</a></span>
+                </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
