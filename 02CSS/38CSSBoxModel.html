@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+
+            /* padding: separacion entre contenido y el borde */
+            padding: 20px;
+            /* atributos para padding */
+            padding-left: 50xp;
+            padding-right: 30px;
+            padding-top: 40px ;
+            padding-bottom: 10px;
+
+            /* atajos */
+            /* primer valor arriba-abajo, segundo valor derecha-izquierda */
+            padding: 50px 30px;
+            /* primer valor arriba, segundo valor los lados, 3 valor abajo */
+            padding: 20px 50px 10px;
+            /* primer valor arriba, segundo valor derecha, tercer valor abajo, cuarto valor izquierda */
+            padding: 20px 50px 40px 35px;
+
+            /* borde */
+            border-width: 5px;
+            border-style: solid;
+            border-color: blue;
+
+            /* atajo borde */
+            border: 5px solid green;
+
+            /* bordes redondeados */
+            border-radius: 10px;
+
+            /* atajos */
+            /* En direccion X. Primer valor arriba izquierda y abajo derecha. segundo valor arriba derecha abajo izquierda */
+            border-radius: 20px 50px;
+
+            /* primer valor arriba izquierda, segundo valor arriba derecha + abajo izquierda, tercer valor abajo derecha   */
+            border-radius: 20px 50px 80px;
+
+            /* sentido agujas del reloj */
+            border-radius: 20px 50px 80px 5px;
+
+            /* propiedades detalladas 
+            border-top-left-radius: ;
+            border-top-rigth-radius: ;
+            border-bottom-left-radius: ;
+            border-bottom.rigth-radius: ;
+            */
+
+            /* margenes */
+            margin-top: 100px;
+            margin-right: 50px;
+            margin-bottom: 30px ;
+            margin-left: 80px;
+
+             /* atajos */
+             /* primer valor arriba-abajo, segundo valor derecha-izquierda */
+            /* margin: 50px 30px; */
+            /* primer valor arriba, segundo valor los lados, 3 valor abajo */
+            /* margin: 20px 50px 10px; */
+            /* primer valor arriba, segundo valor derecha, tercer valor abajo, cuarto valor izquierda */
+            /* margin: 20px 50px 40px 35px; */
+        }
+        /* imagen en bordes */
+        .border{
+            width: 200px;
+            height: 200px;
+            border: 42px solid black;
+            border-image-width: 1;
+            border-image-source: url(/img/pared.jpg);
+            border-image-slice: 25%;
+            border-image-repeat: repeat;
+        }
+        .box{
+            text-align: center;
+            margin: 200px auto;
+            border: 5px solid violet;
+        }
+        input,a,button{
+            outline-color: blue;
+            outline-style: solid;
+            outline-width: 2px;
+
+            /* atajo */
+            outline: 1px solid orange;
+            outline: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, porro. Rerum vero quidem animi assumenda laboriosam ipsam, accusamus ea similique nemo aperiam. Nostrum velit omnis ab voluptates. Consequatur, amet totam!</p>
+    </div>
+    <div class="border"></div>
+    <div class="box">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <a href="">Hola mundo</a>
+        <button>Enviar</button>
+    </div>
+</body>
+</html>
