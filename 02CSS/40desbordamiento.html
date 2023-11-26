@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* desbordamiento de contenedores */
         #desbordamiento{
             width: 250px;
             height: 250px;
@@ -18,13 +19,46 @@
             */
             overflow: auto;
         }
+        h1{
+            width: 300px;
+            /* primera forma */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h2{
+            width: 300px;
+            /* segunda forma experimental */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+        /* despliegue de texto */
+        #despliegue{
+            column-count: 4;
+            column-gap: 50px;
+            column-rule: 2px solid red;
+       }
 
     </style>
     <title>Document</title>
 </head>
 <body>
+    <!-- desbordamiento de contenedor -->
     <div id="desbordamiento">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem, tempora doloremque quibusdam eaque sunt fugiat dolor veniam? Saepe at quibusdam voluptatum sint et accusantium nulla nemo molestias, suscipit iure. lorem</p>
     </div>
+    <!-- desbordamiento de texto -->
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia sed, accusantium recusandae mollitia delectus provident aliquid non architecto ut distinctio, ducimus odio animi qui debitis velit et, dolorum tempore.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum consectetur voluptate ea quaerat necessitatibus obcaecati nam velit dolores! Accusantium illo, repellat sed debitis molestiae nemo excepturi cumque quos facilis!</h2>
+    <div id="despliegue">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur distinctio quidem delectus earum ut eius doloremque doloribus blanditiis, impedit beatae qui repellat optio reprehenderit repellendus fugiat. Quis, velit itaque.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta magni, libero quis modi dicta! Perspiciatis culpa praesentium voluptatum blanditiis quis odit nam illo accusantium suscipit quisquam? Praesentium, quis quae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum amet suscipit consequuntur quibusdam mollitia eveniet odit est et nostrum, reprehenderit nemo dolorum tempore, perferendis, maxime nobis iste vel! Eaque?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum laboriosam nemo totam atque cupiditate, nesciunt maiores deleniti dolor nobis doloribus veritatis. Unde veniam excepturi iure delectus consequuntur doloribus vero cupiditate!
+        </p>
+    </div>
+    
 </body>
 </html>
