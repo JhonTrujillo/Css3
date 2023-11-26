@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: aquamarine;
+            margin: 10px;
+
+            /* despliegue de contenedores */
+            display: block;/* por defecto se aplica en vertical */
+            display: inline;/* En linea - Horizontal ignora width y heigth */
+            display: inline-block;   /* En linea - Horizontal sin ignora width y heigth  */
+            display: list-item;/* actua como una lista */
+            display: table-cell;/* actual como celda de una tabla etiqueta <th> o <td>*/
+            display: table-row;/* actua como una fila de una tabla etiqueta <tr> */
+             /* display:none; ocultar sin respetar el espacio*/
+            /*visibility: hidden; oculta pero respeta el espacio*/
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>Elemento1</div>
+    <div>Elemento2</div>
+    <div style="visibility: hidden">Elemento3</div>
+    <div>Elemento4</div>
+    
+</body>
+</html>
