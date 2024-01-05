@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: gray;
+            margin: 50px 0;
+        
+        /* Paso 1: Propiedades de la animacion */
+        /* 
+        animation-name --> nombre de la animacion
+        animation-duration --> Duracion
+        animation-timing-function --> Movimiento
+        animation-delay --> retraso
+        animation-iteration-count --> cantidad de veces que se repite
+        animation-direction --> direccion
+        animation-fill-mode --> que mostrara cuando termine
+        animation-play-state --> Estado de reproduccion
+        */
+        /* Metodo largo */
+        /* animation-name:changerColor;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: 2;        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running; */
+
+        /* Atajo animacion Nombre, Duracion, timing, interacion, direccion, estado reproducion  */
+        animation: changerColor 5s linear infinite alternate running ;
+        }
+        /* Paso 2: Crear Animacion */
+        @keyframes changerColor{
+           0%{
+                transform: translateX(0);
+                background: yellow;
+            }
+            50%{
+                transform: translateX(700px);
+                background: blue;
+            }
+            100%{
+                transform: translateX(1000px);
+                background: red;
+            }
+                    
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
