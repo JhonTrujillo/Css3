@@ -11,14 +11,9 @@
             border: 2px solid black;
 
             display: flex;
-            flex-flow: row wrap;
-
-            /* alineacion multilinea  */
-            align-content: center;
-            align-content: flex-start; /* se alinean arriba*/
-            align-content: flex-end; /*se alinean abajo*/
-            align-content: space-around; /* Se justifica elementos*/
-            align-content: space-between; 
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
         }
         .flex-h{
             height: 500px;
@@ -34,20 +29,23 @@
             color: #fff;
             border: 2px solid #fff;
         }
+
+        /* Alineacion especifica a un elemento */
+        .item2{
+            align-self: flex-start; /* arriba*/
+            align-self: flex-end; /* abajo*/
+            align-self: stretch; /* se estira o acopla siempre y cuando tenga configurado un alto y ancho*/
+            align-self: center;/*Centra*/
+        }
+
     </style>
 </head>
 <body>
     <div class="flex-container flex-h">
-        <div class="items">1</div>
-        <div class="items">2</div>
-        <div class="items">3</div>
-        <div class="items">4</div>
-        <div class="items">5</div>
-        <div class="items">6</div>
-        <div class="items">7</div>
-        <div class="items">8</div>
-        <div class="items">9</div>
-        
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
     </div>
 </body>
 </html>
