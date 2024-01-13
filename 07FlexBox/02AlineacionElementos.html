@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background: whitesmoke;
+            padding: 20px;
+            border: 2px solid black;
+
+            /* Alineacion elementos */
+            /*  Se establece eje principal horizontal, secundario vertical  */
+            display: flex;
+            flex-direction:row;
+
+            /* APLICAR DIRECION AL EJE PRINCIPAL Y SECUNDARIO */
+
+            /* EJE PRINCIPAl */
+            justify-content: flex-start;/* ajusta al inicio*/
+            justify-content: flex-end;/* ajusta al final */
+            justify-content: space-around; /*separacion igual entre los elementos*/
+            justify-content: space-between; /*se separa los elementos pegandose a las orillas*/
+            justify-content: center; /*central elementos*/
+
+            /* EJE SECUNDARIO */
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: stretch; /* si no se tiene una alineacion ni tamaño en los elementos, los elementos se estiran*/
+            align-items: center;
+        }
+        .flex-h{
+            height: 500px;
+        }
+        .items{
+            background: #21aef0;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container flex-h">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+    </div>
+</body>
+</html>

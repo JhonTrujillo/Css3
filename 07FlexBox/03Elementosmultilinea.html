@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background: whitesmoke;
+            padding: 20px;
+            border: 2px solid black;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            /* alineacion multilinea  */
+            align-content: center;
+            align-content: flex-start; /* se alinean arriba*/
+            align-content: flex-end; /*se alinean abajo*/
+            align-content: space-around; /* Se justifica elementos*/
+        }
+        .flex-h{
+            height: 500px;
+        }
+        .items{
+            background: #21aef0;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container flex-h">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background: whitesmoke;
+            padding: 20px;
+            border: 2px solid black;
+            /*APLICAR FLEXBOX - contenedor padre */
+            /* se alinean horizontalmente y no respetan el tamaño de las cajas */
+            display: flex; 
+            /* se alinean horizontalmente respetan el tamaño de las cajas y crea barra de desplazamiento*/
+            /* display: inline-flex; */
+
+            /* DIRECCIONES */
+            flex-direction: row ; /* Valor por defecto*/
+            /* flex-direction: row-reverse;
+            flex-direction: column; 
+            flex-direction: column-reverse; */
+
+            /* DESBORDE */
+            flex-wrap: nowrap;  /* Valor por defecto*/
+            /*Respeta tamaño de las cajas generando filas*/
+            /* flex-wrap: wrap; 
+            flex-wrap: wrap-reverse; */
+
+            /* ATAJO - Simplicar codigo flex-flow: direccion desbordamiento */
+            flex-flow: row nowrap;
+
+        }
+        .flex-h{
+            height: 500px;
+        }
+        .items{
+            background: #21aef0;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+    </div>
+</body>
+</html>
