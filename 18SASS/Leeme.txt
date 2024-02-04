@@ -1,0 +1,30 @@
+1. Instalar NodeJS en el pc https://nodejs.org/en
+
+2. Validar la instalacion de nodeJS en cmd windows - consola en Visual Studio Code con el comando node --version
+
+3. 2. Validar la instalacion de npm en cmd windows - consola en Visual Studio Code con el comando npm --version
+
+4. En el proyecto se crea dos directorios css: guarda los Css
+scss: guarda los archivos SASS
+
+5. instalar nodeJS al proyecto con el comando npm init -y
+crea un archivo llamado package.json en el directorio del proyecto.
+
+6. Instalar SASS https://sass-lang.com/
+-- existen dos metodos de instalacion: Aplicacion y linea de comando.
+-- la forma profesional es por linea de comandos
+-- previamente debe estar instalado nodeJS
+-- instalacion con el comando npm install -g sass 
+
+Comando para ejecutar SASS: sass scss:css
+si al ejecutar SASS sale este mensaje: la ejecución de scripts
+está deshabilitada en este sistema
+
+-- iniciar powerShell modo administrador
+usar comando Get-ExecutionPolicy -list (el comando mostrara si estan activas o no)
+Ahora ejecutar el siguiente comando Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Automatizar cambio en el sass
+Comando sass --watch scss:css o la extension de VSC live sass compiler
+
+
