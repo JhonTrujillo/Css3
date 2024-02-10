@@ -1,12 +1,12 @@
 body {
-  background: greenyellow;
-  color: lightblue;
+  background: lightblue;
+  color: #fff;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 12px;
   font-weight: 200;
-} 
+}
 
 /*# sourceMappingURL=estilos.css.map */

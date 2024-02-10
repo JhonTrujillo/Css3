@@ -1,0 +1,24 @@
+//Listas es un arreglo
+$colores: blue, red, green, yellow, orange, pink;
+$colores2: indigo, black, white;
+
+// acceder a un elemento de la listas
+h1{
+    //nth(llamararreglo, posicion arreglo inicia en posicion 1)
+    color: nth($colores, 4 );
+}
+
+//Combinar Listas
+$coloresTotales: join($colores, $colores2, comma);
+//blue, red, green, yellow, orange, pink, indigo, black, white
+
+h1{
+    color: nth($coloresTotales, 7);
+}
+
+//Agregar elementos a mis arreglos o listas
+$agregarElemento: append($colores, violet , comma);
+
+h1{
+    color: nth($agregarElemento, 7);
+}
