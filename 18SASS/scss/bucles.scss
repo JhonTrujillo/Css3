@@ -42,9 +42,10 @@ $colores: (#0000ff, azul), (#ff1100, rojo), (#09ff00, verde), (#000, negro), (#e
      border: 1px solid #ccc;
 }
 
+$base-color: #036;
 @for $i from 1 through 20{
      .box:nth-child(#{$i}){
-          background: #00061A*$i;
+          background: lighten($base-color, $i * 2% );
      }
 
 }
