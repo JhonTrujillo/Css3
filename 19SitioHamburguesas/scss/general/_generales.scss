@@ -62,14 +62,14 @@ h5{
 //Paleta de colores de texto gris
 @for $i from 1 through 8{
     .text-solid#{$i}{
-        background: lighten($gris700, $i * 5%);
+        color: lighten($gris700, $i * 5%);
     }
 }
 
 //Paleta de colores de background gris
 @for $i from 1 through 8{
     .bg-solid#{$i}{
-        color: lighten($gris700, $i * 5%);
+        background: lighten($gris700, $i * 5%);
     }
 }
 
