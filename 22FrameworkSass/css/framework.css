@@ -361,4 +361,84 @@ p {
   font-size: 44px;
 }
 
+.bgprimary {
+  color: #0D6EFD;
+}
+
+.bgsecondary {
+  color: #6C757D;
+}
+
+.bgsuccess {
+  color: #198754;
+}
+
+.bginfo {
+  color: #0DCAF0;
+}
+
+.bgwarning {
+  color: #FFC107;
+}
+
+.bgdanger {
+  color: #DC3545;
+}
+
+.bglight {
+  color: #F8F9FA;
+}
+
+.bgdark {
+  color: #212529;
+}
+
+.bgwhite {
+  color: #FFF;
+}
+
+.bgblack {
+  color: #000;
+}
+
+.bgindigo {
+  color: #6610f2;
+}
+
+.bg-gray100 {
+  color: #f8f9fa;
+}
+
+.bg-gray200 {
+  color: #e9ecef;
+}
+
+.bg-gray300 {
+  color: #dee2e6;
+}
+
+.bg-gray400 {
+  color: #ced4da;
+}
+
+.bg-gray500 {
+  color: #adb5bd;
+}
+
+.bg-gray600 {
+  color: #6c757d;
+}
+
+.bg-gray700 {
+  color: #495057;
+}
+
+.bg-gray800 {
+  color: #343a40;
+}
+
+.bg-gray900 {
+  color: #212529;
+}
+
 /*# sourceMappingURL=framework.css.map */
