@@ -1,23 +1,24 @@
 //Mediaquery
-$desktop: (max-width: 1024px);
-$tablets: (max-width: 720px);
-$phone: (max-width: 480px);
+
+$desktop: 1024px;
+$tablets: 720px;
+$phone: 480px;
 
 //Mixin - Funciones
 @mixin desktop{
-    @media screen and #{$desktop}{
+    @media screen and (max-width: $desktop){
         @content;
     }
 }
 
 @mixin tablets{
-    @media screen and #{$tablets}{
+    @media screen and (max-width: $tablets){
         @content;
     }
 }
 
 @mixin phone{
-    @media screen and #{$phone}{
+    @media screen and (max-width: $phone){
         @content;
     }
 }
